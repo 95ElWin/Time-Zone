@@ -67,3 +67,11 @@ header .dropdown{
   flex-direction: column;
   row-gap: 20px;
 }
+header .dropdown::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  transform: translateY(-101%);
+  border: 10px solid transparent;
+  border-bottom-color: var(--red-500);
+}
