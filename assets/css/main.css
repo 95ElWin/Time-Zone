@@ -6,6 +6,11 @@ body {
   background-color: #f0f0f2;
   font-family: "Josefin Sans", sans-serif;
 }
+.container{
+  width: 60%;
+  margin: 0px auto;
+  padding: 0px 12px;
+}
 header {
   padding: 0px;
   background-color: white;
@@ -87,4 +92,18 @@ header .navbar > li .status{
   font-size: 10px;
   font-weight: 600;
   border-radius: 6px;
+}
+/*------------------BANNER------------------*/
+.banner{
+height: 100vh;
+}
+.banner-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-text h1{
+  font-size: 96px;
+  color: #0b1c39;
+  line-height: 1.2;
 }
