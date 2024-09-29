@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-:root{
+:root {
   --red-500: #ff2020;
 }
 body {
   background-color: #f0f0f2;
   font-family: "Josefin Sans", sans-serif;
-}
-.container{
-  width: 60%;
-  margin: 0px auto;
-  padding: 0px 12px;
 }
 header {
   padding: 0px;
@@ -22,43 +17,43 @@ header .head-inner {
   justify-content: space-between;
   align-items: center;
 }
-header .navbar{
+header .navbar {
   display: flex;
   column-gap: 36px;
 }
-header .navbar > li{
+header .navbar > li {
   padding: 40px 0px;
 }
-header .navbar a{
+header .navbar a {
   font-size: 16px;
   color: #141517;
   font-weight: 600;
   transition: 0.3s color;
 }
-header .navbar a:hover{
+header .navbar a:hover {
   color: var(--red-500);
 }
-header .header-icons{
+header .header-icons {
   display: flex;
   column-gap: 30px;
   color: #141517;
   font-size: 18px;
 }
-header .header-icons i{
+header .header-icons i {
   transition: 0.3s;
   cursor: pointer;
 }
-header .header-icons i:hover{
-color: var(--red-500);
-transform: scale(1.1);
+header .header-icons i:hover {
+  color: var(--red-500);
+  transform: scale(1.1);
 }
-header ul .dropdown-element{
+header ul .dropdown-element {
   position: relative;
 }
-header ul .dropdown-element:hover .dropdown{
+header ul .dropdown-element:hover .dropdown {
   visibility: visible;
 }
-header .dropdown{
+header .dropdown {
   min-width: 150px;
   visibility: hidden;
   top: 90px;
@@ -72,7 +67,7 @@ header .dropdown{
   flex-direction: column;
   row-gap: 20px;
 }
-header .dropdown::before{
+header .dropdown::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -80,7 +75,7 @@ header .dropdown::before{
   border: 8px solid transparent;
   border-bottom-color: var(--red-500);
 }
-header .navbar > li .status{
+header .navbar > li .status {
   display: inline-block;
   position: absolute;
   top: 20px;
@@ -94,16 +89,29 @@ header .navbar > li .status{
   border-radius: 6px;
 }
 /*------------------BANNER------------------*/
-.banner{
-height: 100vh;
+.banner {
+  height: 100vh;
 }
-.banner-row{
+.banner-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 12px;
+  position: relative;
 }
-.banner-text h1{
+.banner-row img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translateX(50%);
+}
+.banner-text h1 {
   font-size: 96px;
   color: #0b1c39;
-  line-height: 1.2;
+}
+.banner-text p {
+  width: 75%;
+  font-size: 17px;
+  color: #202025;
+  margin: 50px 0px;
 }
