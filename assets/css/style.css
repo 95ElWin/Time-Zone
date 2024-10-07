@@ -3,12 +3,14 @@
   --red-500: #ff2020;
 }
 body {
-  background-color: #f0f0f2;
   font-family: "Josefin Sans", sans-serif;
 }
 header {
   padding: 0px;
   background-color: white;
+}
+header .toggle {
+  display: none;
 }
 header .head-inner {
   width: 85%;
@@ -90,9 +92,10 @@ header .navbar > li .status {
 }
 /*------------------BANNER------------------*/
 .banner {
-  height: 100vh;
+  height: 90vh;
+  background-color: #f0f0f2;
 }
-.banner-row {
+.banner .banner-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,14 +107,51 @@ header .navbar > li .status {
   top: 0px;
   right: 0px;
   transform: translateX(50%);
+  height: 100%;
 }
 .banner-text h1 {
   font-size: 96px;
   color: #0b1c39;
 }
-.banner-text p {
+.banner-text {
   width: 75%;
+}
+.banner-text p {
   font-size: 17px;
   color: #202025;
   margin: 50px 0px;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .banner {
+    height: 50vh;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-row img {
+    display: none;
+  }
+  .banner-text h1 {
+    font-size: 36px;
+    color: #0b1c39;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    padding: 30px 0px;
+  }
+  header nav {
+    display: none;
+  }
+  header .toggle {
+    display: inline-block;
+  }
+  header .header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
 }
